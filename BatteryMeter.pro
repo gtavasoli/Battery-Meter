@@ -43,3 +43,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     battery_meter.qrc
+
+DISTFILES += \
+    README.md
