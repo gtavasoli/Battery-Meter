@@ -24,6 +24,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 CONFIG += c++11
 
+RC_ICONS = battery.ico
+
 SOURCES += \
         main.cpp \
     batterymeter.cpp
