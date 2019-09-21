@@ -155,12 +155,12 @@ void BatteryMeter::checkBattery()
         trayIcon->showMessage("Battery Status", "Error in getting battery info...", icon, 60000);
     }
 
-    QTimer::singleShot(1000, this, SLOT(checkBattery())); // Check battery status every minutes
+    QTimer::singleShot(60000, this, SLOT(checkBattery())); // Check battery status every minutes
 }
 
 
 void BatteryMeter::resetAlarmFlag()
 {
     alarmFlag = true;
-    QTimer::singleShot(10000, this, SLOT(resetAlarmFlag())); // 5 minutes alarm
+    QTimer::singleShot(300000, this, SLOT(resetAlarmFlag())); // 5 minutes alarm
 }
